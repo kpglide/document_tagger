@@ -7,7 +7,7 @@ documents = [DIV_COMM, MAG_CART]
 # title, author, translator and illustrator of a
 # Project Gutenberg text.
 
-title_search = re.compile(r'(title:\s*)(?P<title>.+\n((' ')+.+)*)', re.IGNORECASE)
+title_search = re.compile(r"(title:\s*)(?P<title>.+\n(  +.+)*)", re.IGNORECASE)
 author_search = re.compile(r'(author:)(?P<author>.*)', re.IGNORECASE)
 translator_search = re.compile(r'(translator:)(?P<translator>.*)', re.IGNORECASE)
 illustrator_search = re.compile(r'(illustrator:)(?P<illustrator>.*)', re.IGNORECASE)
